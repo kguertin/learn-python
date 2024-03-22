@@ -36,3 +36,22 @@ print(full_name[-1])
 # None type - Python's version of null
 user = None
 print(type(user))
+
+animal = "catdog"
+print(animal[2:4])
+print(animal[3:5])
+# Below will grab until the end of the slice, even though there is not 99 characters
+print(animal[3:99])
+# can get to the end of string
+print(animal[3:])
+#can get from start of string
+print(animal[:3])
+
+pn1 = "(310) 448 8712"
+pn2 = "(212) 696 9912"
+print(pn1[1:4])
+print(pn2[1:4])
+
+# can also add a step to get ever char at the step value
+str = "Toronto Raptors 2019 NBA Champions"
+print(str[0:35:2])
