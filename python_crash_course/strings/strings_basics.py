@@ -55,3 +55,17 @@ print(pn2[1:4])
 # can also add a step to get ever char at the step value
 str = "Toronto Raptors 2019 NBA Champions"
 print(str[0:35:2])
+
+# *** Escape Characters ***
+phrase = "hello\nworld"
+print(phrase)
+print("hello \tworld")
+print("She said \"lol\"")
+print("\\")
+
+multi = '''
+This is a 
+Multiline
+string.
+'''
+print(multi)
