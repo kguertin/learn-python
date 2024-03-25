@@ -31,3 +31,4 @@ print(prize_money)
 # Often used for counters
 site_visitors = 200
 site_visitors += 1
+
