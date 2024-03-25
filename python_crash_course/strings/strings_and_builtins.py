@@ -10,3 +10,10 @@ first_name = input("What is your first name? ")
 last_name = input("What is your last name? ")
 full_name = first_name + " " + last_name
 print("Hi there " + full_name + "!!!!!")
+
+# Type Casting
+age = "19"
+print(type(int(age)))
+print(float(age))
+print(type(str(55)))
+print(int(1.999))
