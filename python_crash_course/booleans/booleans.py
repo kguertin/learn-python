@@ -37,3 +37,12 @@ print("a" in "bat")
 print("A" in "bat")
 print("onto" in "Toronto")
 print("ontos" in "Toronto")
+
+# Comparing strings
+# compares the unicode number. user ord() to show unicode value
+print("a" < "w")
+print("a" < "$")
+print("a" < "A")
+print(ord("a"))
+print(ord("A"))
+print("100" < "9")
