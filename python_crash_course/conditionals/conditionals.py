@@ -15,3 +15,5 @@ elif color == "blue":
     print("Intermediate")
 elif color == "black":
     print("Advanced")
+
+    
