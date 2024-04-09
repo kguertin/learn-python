@@ -30,3 +30,4 @@ stars = 10
 while stars > 0:
     print("*" * stars)
     stars -= 1
+
