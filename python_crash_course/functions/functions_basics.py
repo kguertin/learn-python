@@ -21,3 +21,10 @@ divide(45,6.4)
 divide(100, 33.3)
 divide(4, 100)
 divide(100, 4)
+
+# Returning values. If we do not returning something, function implicitly returns the value None.
+def divide_return(x,y):
+    return x/y
+
+num = divide_return(1,3)
+print(num)
