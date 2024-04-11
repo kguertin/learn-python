@@ -28,3 +28,25 @@ def divide_return(x,y):
 
 num = divide_return(1,3)
 print(num)
+
+# Default Params
+def laugh_strength(strength=2):
+    print("HA!" * strength)
+laugh_strength(10)
+laugh_strength()
+
+def slugify(url, sep="-"):
+    return url.strip().lower().replace(" ", sep)
+
+url = slugify("       HELLO world I LOVE YOU         ")
+print(url)
+url = slugify("       HELLO world I LOVE YOU         ", "_")
+print(url)
+url = slugify("       HELLO world I LOVE YOU         ", "X")
+print(url)
+
+# Default value must come after parameters without default.
+def greet( person, msg = "Hi",):
+    print(f"{msg}, {person}!")
+
+greet("Kevin")
