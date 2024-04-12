@@ -14,9 +14,11 @@ def func():
 
 func()
 
-# Local Scope - Variable within a function 
+# Local Scope - Variable within a function - Local score doesn't apply to conditionals and loops.
 def zoo():
       animal = "Harlequin Shrimp"
       print("inside zoo function", animal)
 zoo()
 print("outside function cannot read animal in zoo function")
+
+# Enclosing Scope
