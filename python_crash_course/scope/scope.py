@@ -1,5 +1,7 @@
 # Scope 
 
+# LEGB - Scope Order
+
 #Global Scope - Availible everywhere 
 animal = "Lemur"
 
@@ -21,4 +23,14 @@ def zoo():
 zoo()
 print("outside function cannot read animal in zoo function")
 
-# Enclosing Scope
+# Enclosing Scope - Nested functions can access parent functions variables.
+
+# Built in score are available throughout python 
+
+# Global - can put in front of vars to define if variable is global
+def outer(): 
+    global new_animal
+    new_animal = "spider Crab"
+outer()
+
+print(new_animal)
