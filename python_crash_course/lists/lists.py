@@ -40,3 +40,18 @@ print(teams)
 nums = [1,2,4]
 nums.insert(2, 3)
 print(nums)
+
+# List Slices
+list1 = [1,2,3,4,5,6,7,8,9,10]
+print(list1[0:4])
+print(list1[0:9:2])
+print(list1[5:])
+print(list1[:5])
+
+nums = [4,5,6,7]
+print(nums)
+nums = [4,5,6,7]
+nums[1:3] = ["a", "b", "c", "d"]
+print(nums)
+nums[1:5] = [5]
+print(nums)
