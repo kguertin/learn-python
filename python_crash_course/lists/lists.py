@@ -21,3 +21,22 @@ print(wait_list[-1])
 
 wait_list[1] = "Aria"
 print(wait_list[1])
+
+# List Methods
+# Append adds item to end of list
+nums = [1,2,3,4]
+nums.append(5)
+print(nums)
+
+# Extend takes an iterable
+letters = list("abc")
+letters.extend("defg")
+print(letters)
+teams = ["CF Montreal", "Toronto FC", "Vancouver Whitecaps"]
+teams.extend(["LA Galaxy", "LAFC"])
+print(teams)
+
+# Insert
+nums = [1,2,4]
+nums.insert(2, 3)
+print(nums)
