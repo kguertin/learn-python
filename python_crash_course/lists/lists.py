@@ -11,3 +11,13 @@ stuff = [4, 5.6, True, False, "hi", []]
 
 print(list("hello"))
 print(list(range(1,10)))
+
+# Accessing List Items 
+wait_list = ["Tom", "Arya", "Amir"]
+print(wait_list[0])
+print(wait_list[1])
+print(wait_list[2])
+print(wait_list[-1])
+
+wait_list[1] = "Aria"
+print(wait_list[1])
