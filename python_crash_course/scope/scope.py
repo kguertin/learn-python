@@ -31,6 +31,7 @@ print("outside function cannot read animal in zoo function")
 def outer(): 
     global new_animal
     new_animal = "spider Crab"
+    
 outer()
 
 print(new_animal)
