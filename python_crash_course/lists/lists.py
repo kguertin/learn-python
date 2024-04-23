@@ -76,6 +76,16 @@ print(cities)
 # Can also pop an index
 print(cities.pop(1))
 print(cities)
-
+# Del statement can be used to delete indexes - can  be used with slices. 
 del cities[2]
 print(cities)
+
+# Loops and lists
+num_list = [1,2,3,4,5,6,7,8,9,10]
+for num in num_list:
+    print(num)
+
+idx = 0
+while idx < len(num_list):
+    print(f"The index is {idx}, the value is {num_list[idx]}")
+    idx += 1
