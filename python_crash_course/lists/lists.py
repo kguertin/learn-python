@@ -55,3 +55,27 @@ nums[1:3] = ["a", "b", "c", "d"]
 print(nums)
 nums[1:5] = [5]
 print(nums)
+
+# Clear - Empties a list
+letters = ["a", "b", "c"]
+print(letters)
+letters.clear()
+print(letters)
+
+# Remove - removes the first match of a value
+cities = ["TOR", "VAN" , "CGY", "MTL", "CGY"]
+print(cities)
+cities.remove("CGY")
+print(cities)
+
+# Pop - removes last element from list, returns it. 
+print(cities.pop())
+print(cities)
+cities.append("OTT")
+print(cities)
+# Can also pop an index
+print(cities.pop(1))
+print(cities)
+
+del cities[2]
+print(cities)
