@@ -3,7 +3,7 @@ drivers = ["Charles", "Pierre", "Valterri", "Lewis", "George","Lando"]
 
 # Oh dear, we've misspelled "Valtteri" as "Valterri".  Update the drivers list to include the correct spelling!
 
-drivers[2] = "Valterri"
+drivers[2] = "Valtteri"
 
 # Esteban makes it out of the pits and joins the pack just in time.  Add "Esteban" to the end of the drivers list!
 drivers.append("Esteban")
@@ -23,18 +23,17 @@ drivers.pop(0)
 
 
 # And again the leader of the pack runs into trouble! He's not out of the race, but he's now moved to last place.  Remove the first driver in the list, store it in variable, and then add it to the end of the list.
-driver = drivers.pop(0)
-drivers.append(driver)
+leader = drivers.pop(0)
+drivers.append(leader)
 
 
 # My idiotic cat, Blue, is in the middle of the pack.  Delete "Blue" from the drivers list using the remove method!
 drivers.remove("Blue")
 
 
-
 # My dog, Elton, is making a remarkable charge up the leadboard! Remove Elton from his current position in the list and insert him at index 2.
-driver = drivers.pop(-2)
-drivers.insert(2, driver)
+drivers.remove("Elton")
+drivers.insert(2, "Elton")
 
 
 # The race is over! It's time for the podium ceremony.  Create a new list called podium that contains the first 3 elements from the drivers list. (use a slice!)
