@@ -40,3 +40,61 @@ def buyIceCream():
     print(f"OK, {response} ice cream coming right up")
 
 # buyIceCream()
+
+# List Methods
+# Count returns the number of times something appears in a list
+
+list = [True, True, False, False, False]
+print(list.count(True))
+print(list.count("true"))
+
+# Reverse: Reverses a list IN PLACE (Mutates the existing list)
+print(list)
+list.reverse()
+print(list)
+
+# sort: sorts the list IN PLACE
+evens = [6,2,4]
+evens.sort()
+print(evens)
+evens.sort(reverse=True)
+print(evens)
+
+# Sorted by char value when working with strings
+colors = ["red", "orange", "purple", "green"]
+colors.sort()
+print(colors)
+
+# ID returns the identifier in memory
+num = 34
+print(id(num))
+num = 34
+print(id(num))
+true = True
+print(id(true))
+true = True
+print(id(true))
+
+# List have their own unique identity, not the same identifier. A new list is a new container in memory.
+list = []
+print(id(list))
+# If we dont reassign the list it keeps the same ID
+list = []
+print(id(list))
+print(id(list))
+# List2 points to the original list
+list2 = list
+print(id(list2))
+# This updates both lists as list2 is essentially a reference to list one 
+list2.append(2)
+print(list)
+print(list2)
+
+# Comparing Lists 
+# == compairs the contents of two lists, do they hold the same value.
+# is compares the identity of two lists.
+demo1 = [1,2,3]
+demo2 = [1,2,3]
+
+print(demo1 == demo2)
+print(demo1 is demo2)
