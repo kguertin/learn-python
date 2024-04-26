@@ -98,3 +98,15 @@ demo2 = [1,2,3]
 
 print(demo1 == demo2)
 print(demo1 is demo2)
+
+# Split and Join
+# Split - Similar to JS
+birthday = "03/27/2020"
+print(birthday.split("/"))
+full_name = "Teddy Richard Smith Jr"
+print(full_name.split(" "))
+
+# Join - Reverse of JS
+fruits = ["Apple", "Pear", "Kiwi"]
+print(" ".join(fruits))
+print("!!!".join(fruits))
