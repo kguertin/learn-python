@@ -110,3 +110,29 @@ print(full_name.split(" "))
 fruits = ["Apple", "Pear", "Kiwi"]
 print(" ".join(fruits))
 print("!!!".join(fruits))
+
+# Unpacking - Like JS Destructuring. Must unpack all values of an array. Can use * for left overs
+color = [244, 43, 19]
+red, green, blue = color
+print(red,green,blue)
+
+item = [4, "Pizza", "Plain", "16.98"]
+quantity, *others, price = item
+print(quantity, others, price)
+
+# Copying Lists
+# This creates a ref to an existing list.
+i2 = item
+print(id(item), id(i2))
+print(i2 is item)
+print(i2 == item)
+
+# This creates a shallow copy (no nested data structures copied)
+i2 = item.copy()
+print(id(item), id(i2))
+print(i2 is item)
+print(i2 == item)
+
+# Can make shallow copy with slice
+i3 = i2[:]
+
