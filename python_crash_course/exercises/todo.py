@@ -12,7 +12,8 @@ while True:
     for i in range(len(todo_list)):
         print(f"{i + 1}) {todo_list[i]}")
     print("*" * 25)
-    command = input("Enter a command. Type 'h' for help:\n> ")
+    print("Enter a command. Type 'h' for help:")
+    command = input("> ")
 
     if command == "q":
         break
@@ -30,7 +31,7 @@ while True:
     else:
         if len(command.strip()) > 0:
             todo_list.append(command)
-            
+
 if len(completed) > 0:
     print(f"Today you completed {len(completed)} todos:")
     for item in completed: 
