@@ -52,6 +52,8 @@ idx = 0
 while idx < len(drivers):
     print(f"{idx + 1}. {drivers[idx]}")
     idx += 1
+
 print("*" * 20)
+
 for num in range(len(drivers)):
     print(f"{num + 1}. {drivers[num]}")
