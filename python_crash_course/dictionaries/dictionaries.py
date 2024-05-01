@@ -70,3 +70,18 @@ for student, score in test_scores.items():
         best_student = student
     print(f"{student} got a score of {score}")
 print(f"Highest score was {max_score} by {best_student}")
+
+#Update - joining dictionaries
+d1 = {"a": 1, "b": 2}
+d2 = {"c": 3, "d": 4, "e": 5, "a": "apple"}
+d1.update(d2)
+print(d1)
+
+d1 = {"a": 1, "b": 2}
+d2 = {"c": 3, "d": 4, "e": 5, "a": "apple"}
+#last dictionary takes precedence if there are two keys 
+d3 = {**d1, **d2}
+print(d3)
+ # Python 3.9 or higher
+d4 = d1 | d2
+print(d4)
