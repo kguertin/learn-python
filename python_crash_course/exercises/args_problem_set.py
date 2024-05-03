@@ -21,10 +21,10 @@ print(contains_pickle(1,2, "blue"))
 # count_fails(85,78,91) ----------> 0
 # count_fails(50,41,47,74,76,81) -> 3
 
-def count_fails(*args):
+def count_fails(*scores):
     fails = 0 
-    for arg in args:
-        if arg <= 50:
+    for score in scores:
+        if score <= 50:
             fails += 1
     return fails
 
