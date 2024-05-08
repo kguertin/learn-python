@@ -2,11 +2,19 @@
 
 # Class - A blueprint for objects. A class describes what properties and functionality individual objects will contain.
 class Dog:
+    species = 'C. Lupus'
+    num_dogs = 0
+
+    @classmethod
+    def register_stray(cls):
+        return cls("Coming soon", "unknown", "unknown")
+
     def __init__(self, name, breed, location):
         self.name = name
         self.breed = breed
         self.location = location
         self.tricks = []
+        Dog.num_dogs += 1
 
     def bark(self):
         print(f"{self.name} says 'WOOF!'")
@@ -49,3 +57,12 @@ jules.learn_trick("stay")
 jules.perform_trick("stay")
 jules.perform_trick("sit")
 
+# Class Attribute - class and all instances have this 
+print(Dog.species)
+print(finn.species)
+print(jules.species)
+print(Dog.num_dogs)
+
+dog = Dog.register_stray()
+print(dog.name, dog.breed)
+print(Dog.num_dogs)
