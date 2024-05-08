@@ -66,3 +66,36 @@ print(Dog.num_dogs)
 dog = Dog.register_stray()
 print(dog.name, dog.breed)
 print(Dog.num_dogs)
+
+# Inheritance 
+class Cat:
+    def __init__(self, name):
+        self.name = name
+
+    def meow(self):
+        print(f"{self.name} meows")
+
+
+class Cougar(Cat):
+    def purr(self):
+        print(f"{self.name} purrs!!!")
+
+dennis = Cougar("Dennis")
+dennis.meow()
+dennis.purr()
+
+class Lion(Cat):
+    def __init__(self, name, pride_name):
+        super().__init__(name)
+        self.pride_name = pride_name
+
+    def roar(self):
+        print(f"{self.name} ROARS!")
+
+simba = Lion("Simba", "Pride 1")
+
+simba.meow()
+simba.roar()
+print(simba.pride_name)
+
+# Super 
